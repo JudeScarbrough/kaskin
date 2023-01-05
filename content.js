@@ -4,6 +4,10 @@ let counter2 = 0
 let prompt = ""
 
 
+
+
+
+
 document.addEventListener('keydown', function(event) {
         if (promptOpen){
 
@@ -50,9 +54,55 @@ function promptStart() {
 
 function promptEnd() {
     prompt = prompt.slice(0, -3)
-    alert("Your Prompt is: " + prompt)
-}
+    
+    var newWindow = window.open("https://chat.openai.com/chat")
 
+    newWindow.alert("agh1")
+
+    newWindow.addEventListener('load', function () {
+
+        newWindow.alert("agh2")
+
+        
+        
+
+
+        
+
+
+            setTimeout(function () {
+                const element = newWindow.document.querySelectorAll("textarea")[0]
+
+                element.value = "agh"
+
+
+                // create a new event
+                var event = new KeyboardEvent('keydown', {
+                    'key': 'Enter'
+                });
+
+                // dispatch the event
+                element.dispatchEvent(event);
+
+
+
+
+            }, 2000);
+
+        
+
+
+
+
+
+    });
+
+
+
+
+
+
+}
 
 
   
