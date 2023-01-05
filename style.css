@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Oswald:wght@600&display=swap');
+
+
+.activate {
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.buttondiv {
+    width: 200px;
+    margin: auto;
+}
+
+.title{
+    font-size: 30px;
+    font-family: kanit;
+    line-height: 20px;
+    margin: 0px;
+    padding-top: 8px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-family: kanit;
+    line-height: 10px;
+}
+
+.logo {
+    display: inline;
+}
+
+.toptable {
+    width: 350px;
+}
